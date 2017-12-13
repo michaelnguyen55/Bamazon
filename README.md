@@ -2,18 +2,18 @@
 Bamazon is a node application that allows customers, managers, and supervisors to interact with products from a MySQL database. Customers can buy different products. Managers can view products for sale, view products with a low inventory, view department names, add to inventory of a product, and add new products. Supervisors can view products sales by department and create new departments.
 
 ## Table of Contents
-* [Installation and Instructions For Bamazon](#Installation-and-Instructions-For-Bamazon)
-* [Customer](#Customer)
-	* [View Products](#View-Products)
-* [Manager](#Manager)
-	* [View Products For Sale](#View-Products-For-Sale)
-	* [View Low Inventory](#View-Low-Inventory)
-	* [View Departments](#View-Departments)
-	* [Add to Inventory](#Add-to-Inventory)
-	* [Add New Product](#Add-New-Product)
-* [Supervisor](#Supervisor)
-	* [View Product Sales by Department](#View-Product-Sales-by-Department)
-	* [Create New Department](#Create-New-Department)
+* [Installation and Instructions For Bamazon](#installation-and-instructions-for-bamazon)
+* [Customer](#customer)
+	* [View Products](#view-products)
+* [Manager](#manager)
+	* [View Products For Sale](#view-products-for-sale)
+	* [View Low Inventory](#view-low-inventory)
+	* [View Departments](#view-departments)
+	* [Add to Inventory](#add-to-inventory)
+	* [Add New Product](#add-new-product)
+* [Supervisor](#supervisor)
+	* [View Product Sales by Department](#view-product-sales-by-department)
+	* [Create New Department](#create-new-department)
 
 ## Installation and Instructions For Bamazon
 1. User must first install the needed packages to use the application by using `npm install`.
@@ -26,13 +26,13 @@ Example using command line: `node bamazonCustomer.js`
 
 ## Customer
 1. The customer is prompted with 2 options.
-![Customer Options](Images/customer-options.png)
+![Customer Options](Images/customer-options.PNG)
 * Choose the `View Products` option to view all available products for sale from bamazon.
 * Choose the `Exit Application` option to exit the application.
 
 ### View Products
 * Below is an example of when you choose `View Products`.
-![View Products](Images/customer-view-products.png)
+![View Products](Images/customer-view-products.PNG)
 1. The customer can look at the different products' id, name, and price.
 2. After the customer is done viewing, they can answer the new questions at the bottom of the products table.
 	`Which product would you like to buy? <Enter Item ID>`
@@ -42,17 +42,17 @@ Example using command line: `node bamazonCustomer.js`
 	* Answer this question by entering the number of units you would like to buy. Please enter in whole numbers only.
 * (All questions are user authenticated. I.e. only enter whole numbers) 
 Example of both questions answered below:
-![Buy Products Questions](Images/customer-buy-products-prompt.png)
+![Buy Products Questions](Images/customer-buy-products-prompt.PNG)
 4. After answering both questions successfully, a reciept will be shown if the order has successfully went through. Example below:
-![Receipt](Images/receipt.png)
+![Receipt](Images/receipt.PNG)
 5. The customer is then asked if they would like to buy another product. Example below:
-![Buy Another Product Question](Images/customer-buy-another-product.png)
+![Buy Another Product Question](Images/customer-buy-another-product.PNG)
 * Choose `Yes` to look at the products again and buy another product.
 * Choose `No` to exit the application.
 
 ## Manager
 1. The manager is prompted with 6 options.
-![Manager Options](Images/manager-options.png)
+![Manager Options](Images/manager-options.PNG)
 * Choose the `View Products For Sale` option to view all the available products for sale from bamazon.
 * Choose the `View Low Inventory` option to view all products with a stock quantity less than 5.
 * Choose the `View Departments` option to view all department names.
@@ -64,17 +64,17 @@ Example of both questions answered below:
 
 ### View Products For Sale
 * Below is example of when you choose `View Products For Sale`.
-![Manager View Products](Images/manager-view-products.png)
+![Manager View Products](Images/manager-view-products.PNG)
 * Item ID, product name, department, price, and stock quantity of each product is shown.
 
 ### View Low Inventory
 * Below is example of when you choose `View Low Inventory`.
-![Manager View Low Inventory](Images/manager-view-low-inventory.png)
+![Manager View Low Inventory](Images/manager-view-low-inventory.PNG)
 * Item ID, product name, department, price, and stock quantity of each product with a stock quantity less than 5 is shown.
 
 ### View Departments
 * Below is example of when you choose `View Departments`.
-![Manager View Departments](Images/manager-view-departments.png)
+![Manager View Departments](Images/manager-view-departments.PNG)
 * Department ID and department name of each department is shown.
 
 ### Add to Inventory
@@ -85,9 +85,9 @@ Example of both questions answered below:
 	* Answer this question by entering the number of units of stock you would like to add. Please enter only whole numbers.
 * (All questions are user authenticated. I.e. only enter whole numbers) 
 Example of questions answered below:
-![Manager Add to Inventory](Images/manager-add-to-inventory.png)
+![Manager Add to Inventory](Images/manager-add-to-inventory.PNG)
 3. After answering the questions successfully, the results will be shown if the product's stock was successfully updated. Example below:
-![Manager Add to Inventory Results](Images/manager-add-to-inventory-results.png)
+![Manager Add to Inventory Results](Images/manager-add-to-inventory-results.PNG)
 
 ### Add New Product
 * The manager will be asked 4 questions.
@@ -101,13 +101,13 @@ Example of questions answered below:
 	* Answer this question by entering the stock quantity you currently have of the product. Please enter only whole numbers.
 * (All questions are user authenticated. I.e. only enter whole numbers) 
 Example of questions answered below:
-![Manager Add New Product](Images/manager-add-new-product.png)
+![Manager Add New Product](Images/manager-add-new-product.PNG)
 5. After answering the questions successfully, the results will be shown if the product was successfully created. Example below:
-![Manager Add New Product Results](Images/manager-add-new-product-results.png)
+![Manager Add New Product Results](Images/manager-add-new-product-results.PNG)
 
 ## Supervisor
 1. The supervisor is prompted with 3 options.
-![Supervisor Options](Images/supervisor-options.png)
+![Supervisor Options](Images/supervisor-options.PNG)
 * Choose the `View Product Sales by Department` option to view the product sales by department.
 * Choose the `Create New Department` option to create a new department.
 * Choose the `Exit Application` option to exit the application.
@@ -116,7 +116,7 @@ Example of questions answered below:
 
 ### View Product Sales by Department
 * Below is example of when you choose `View Product Sales by Department`.
-![Supervisor View Departments](Images/supervisor-view-departments.png)
+![Supervisor View Departments](Images/supervisor-view-departments.PNG)
 * Department ID, department name, over head costs, product sales, and total profit of each department is shown.
 * Departments are ordered by total profit descending.
 
@@ -126,6 +126,6 @@ Example of questions answered below:
 	* Answer this question by entering a department name that does not already exist.
 * (All questions are user authenticated. I.e. only enter whole numbers) 
 * Below is an example of the question answered:
-![Supervisor Create New Department](Images/supervisor-create-new-department.png)
+![Supervisor Create New Department](Images/supervisor-create-new-department.PNG)
 2. After the question is successfully answered, the results will be shown if the department was successfully created. Example below:
-![Supervisor Create New Department](Images/supervisor-create-new-department-results.png)
+![Supervisor Create New Department](Images/supervisor-create-new-department-results.PNG)
