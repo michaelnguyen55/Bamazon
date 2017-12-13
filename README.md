@@ -33,19 +33,21 @@ Example using command line: `node bamazonCustomer.js`
 * Choose the `Exit Application` option to exit the application.
 
 ### View Products
-* Below is an example of when you choose `View Products`.
+Below is an example of when you choose `View Products`.
 
 ![View Products](Images/customer-view-products.PNG)
 
 1. The customer can look at the different products' id, name, and price.
 2. After the customer is done viewing, they can answer the new questions at the bottom of the products table.
+
 	`Which product would you like to buy? <Enter Item ID>`
 	* Answer this question by entering the Item ID of the product you wish to buy. Please enter in whole numbers only.
 3. Another question will show after answering which product you want.
+
 	`How many units of the product would you like to buy?`
 	* Answer this question by entering the number of units you would like to buy. Please enter in whole numbers only.
 * (All questions are user authenticated. I.e. only enter whole numbers) 
-Example of both questions answered below:
+* Example of both questions answered below:
 
 ![Buy Products Questions](Images/customer-buy-products-prompt.PNG)
 
@@ -75,21 +77,21 @@ Example of both questions answered below:
 * After going through an option and its steps, the manager options will be shown again
 
 ### View Products For Sale
-* Below is example of when you choose `View Products For Sale`.
+Below is example of when you choose `View Products For Sale`.
 
 ![Manager View Products](Images/manager-view-products.PNG)
 
 * Item ID, product name, department, price, and stock quantity of each product is shown.
 
 ### View Low Inventory
-* Below is example of when you choose `View Low Inventory`.
+Below is example of when you choose `View Low Inventory`.
 
 ![Manager View Low Inventory](Images/manager-view-low-inventory.PNG)
 
 * Item ID, product name, department, price, and stock quantity of each product with a stock quantity less than 5 is shown.
 
 ### View Departments
-* Below is example of when you choose `View Departments`.
+Below is example of when you choose `View Departments`.
 
 ![Manager View Departments](Images/manager-view-departments.PNG)
 
@@ -101,7 +103,8 @@ Example of both questions answered below:
 	* Answer this question by entering the Item ID of the product you would like to add more stock to. Please enter only whole numbers.
 2. `How many units of the product would you like to add?`
 	* Answer this question by entering the number of units of stock you would like to add. Please enter only whole numbers.
-* (All questions are user authenticated. I.e. only enter whole numbers) 
+* (All questions are user authenticated. I.e. only enter whole numbers)
+
 Example of questions answered below:
 
 ![Manager Add to Inventory](Images/manager-add-to-inventory.PNG)
@@ -121,6 +124,7 @@ Example of questions answered below:
 4. `Enter the stock quantity`
 	* Answer this question by entering the stock quantity you currently have of the product. Please enter only whole numbers.
 * (All questions are user authenticated. I.e. only enter whole numbers) 
+
 Example of questions answered below:
 
 ![Manager Add New Product](Images/manager-add-new-product.PNG)
@@ -141,7 +145,7 @@ Example of questions answered below:
 * After going through an option and its steps, the manager options will be shown again
 
 ### View Product Sales by Department
-* Below is example of when you choose `View Product Sales by Department`.
+Below is example of when you choose `View Product Sales by Department`.
 
 ![Supervisor View Departments](Images/supervisor-view-departments.PNG)
 
@@ -153,7 +157,8 @@ Example of questions answered below:
 1. `Enter the department's name`
 	* Answer this question by entering a department name that does not already exist.
 * (All questions are user authenticated. I.e. only enter whole numbers) 
-* Below is an example of the question answered:
+
+Below is an example of the question answered:
 
 ![Supervisor Create New Department](Images/supervisor-create-new-department.PNG)
 
