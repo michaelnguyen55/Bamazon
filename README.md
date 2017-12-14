@@ -46,7 +46,8 @@ Below is an example of when you choose `View Products`.
 
 	`How many units of the product would you like to buy?`
 	* Answer this question by entering the number of units you would like to buy. Please enter in whole numbers only.
-* (All questions' answers are checked/authenticated for validity. I.e. Only enter whole numbers. User will be prompted again if they entered an invalid answer) 
+	* If there are not enough units of the product left that the customer wants or if there is no more stock, the customer will be asked if they want to buy another product.
+* (All questions' answers are checked for validity. I.e. Only enter whole numbers. User will be prompted again if they entered an invalid answer) 
 * Example of both questions answered below:
 
 ![Buy Products Questions](Images/customer-buy-products-prompt.PNG)
@@ -103,7 +104,7 @@ Below is example of when you choose `View Departments`.
 	* Answer this question by entering the Item ID of the product you would like to add more stock to. Please enter only whole numbers.
 2. `How many units of the product would you like to add?`
 	* Answer this question by entering the number of units of stock you would like to add. Please enter only whole numbers.
-* (All questions' answers are checked/authenticated for validity. I.e. Only enter whole numbers. User will be prompted again if they entered an invalid answer) 
+* (All questions' answers are checked for validity. I.e. Only enter whole numbers. User will be prompted again if they entered an invalid answer) 
 
 Example of questions answered below:
 
@@ -123,7 +124,7 @@ Example of questions answered below:
 	* Answer this question by entering the price you wish to sell the product at. Please enter only numbers.
 4. `Enter the stock quantity`
 	* Answer this question by entering the stock quantity you currently have of the product. Please enter only whole numbers.
-* (All questions' answers are checked/authenticated for validity. I.e. Only enter whole numbers. User will be prompted again if they entered an invalid answer)  
+* (All questions' answers are checked for validity. I.e. Only enter whole numbers. User will be prompted again if they entered an invalid answer)  
 
 Example of questions answered below:
 
@@ -156,7 +157,7 @@ Below is example of when you choose `View Product Sales by Department`.
 * The supervisor will be asked 1 question.
 1. `Enter the department's name`
 	* Answer this question by entering a department name that does not already exist.
-* (All questions' answers are checked/authenticated for validity. I.e. Only enter whole numbers. User will be prompted again if they entered an invalid answer)  
+* (All questions' answers are checked for validity. I.e. Only enter whole numbers. User will be prompted again if they entered an invalid answer)
 
 Below is an example of the question answered:
 
