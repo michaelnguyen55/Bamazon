@@ -143,7 +143,7 @@ var bamazonManager = {
 		}
 		]).then(function(answer) {
 			console.log("");
-			answer.quantity = parseFloat(answer.quantity);
+			answer.quantity = parseFloat((answer.quantity).trim());
 			//Checks if the manager entered less than 1 unit, prompt again if true
 			if(answer.quantity < 1) {
 				console.log("Please add at least 1 unit.");
@@ -156,7 +156,7 @@ var bamazonManager = {
 			}
 			else {
 				//Updates the product in the bamazon database
-				that.updateProduct(answer.id, answer.quantity);
+				that.updateProduct((answer.id).trim(), answer.quantity);
 			};
 		});
 	},
@@ -226,8 +226,8 @@ var bamazonManager = {
 			//Variables references for faster calling
 			var name = (answer.name).trim();
 			var department = (answer.department).trim();
-			var price = parseFloat(answer.price);
-			var quantity = parseFloat(answer.quantity);
+			var price = parseFloat((answer.price).trim());
+			var quantity = parseFloat((answer.quantity).trim());
 
 			//The number of decimals after price is used for checking if they are greater than 2
 			var priceDecimals = 0;

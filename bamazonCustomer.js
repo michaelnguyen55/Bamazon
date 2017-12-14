@@ -90,7 +90,7 @@ var bamazonCustomer = {
 		])
 		.then(function(answer) {
 			console.log("");
-			answer.quantity = parseFloat(answer.quantity);
+			answer.quantity = parseFloat((answer.quantity).trim());
 			//Checks if the customer entered less than 1 unit, prompt again if true
 			if(answer.quantity < 1) {
 				console.log("Please purchase at least 1 unit.");
@@ -103,7 +103,7 @@ var bamazonCustomer = {
 			}
 			else {
 				//Check the store for the product after the customer has finished answering the prompt
-				that.checkStore(answer.id, answer.quantity);
+				that.checkStore((answer.id).trim(), answer.quantity);
 			};
 		});
 	},
